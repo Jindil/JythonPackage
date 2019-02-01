@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+ 
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>23.1.1</version>
+        <relativePath />
+    </parent>
+ 
+    <artifactId>TemplatesMatching</artifactId>
+    <version>1.0</version>
+ 
+    <name>MyName</name>
+    <description>Blabla</description>
+    <url>https://github.com/Jindil/JythonPackage</url>
+    <inceptionYear>2019</inceptionYear>
+	
+	<organization>
+		<name>My Company</name>
+		<url>http://mycompany.com/</url>
+	</organization>
+	
+	<licenses>
+		<license>
+			<name>MIT</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+    <developers>
+        <developer>
+            <id>Jindil</id>
+            <name>Laurent THOMAS</name>
+            <url>https://imagej.net/User:Lthomas</url>
+            <roles>
+                <!-- see https://imagej.net/Team -->
+                <role>lead</role>
+                <role>developer</role>
+                <role>debugger</role>
+                <role>reviewer</role>
+                <role>support</role>
+                <role>maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+	
+	<contributors>
+        <contributor>
+            <name>None</name>
+        </contributor>
+    </contributors>
+
+ 
+    <mailingLists>
+        <mailingList>
+            <name>Imaging Forum</name>
+            <archive>http://forum.imagej.sc/</archive>
+        </mailingList>
+    </mailingLists>
+ 
+    <scm>
+        <connection>scm:git:git://github.com/Jindil/JythonPackage</connection>
+        <developerConnection>scm:git:git@github.com:Jindil/JythonPackage</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/Jindil/JythonPackage</url>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/Jindil/JythonPackage</url>
+    </issueManagement>
+    <ciManagement>
+        <system>None</system>
+    </ciManagement>
+ 
+    <properties>
+        <package-name>JythonPackage</package-name>
+        <license.licenseName>None</license.licenseName>
+        <license.copyrightOwners>N/A</license.copyrightOwners>
+    </properties>
+ 
+    <repositories>
+        <repository>
+			<!-- ImageJ repo -->
+            <id>imagej.public</id>
+            <url>http://maven.imagej.net/content/groups/public</url>
+        </repository>
+		
+		<repository>
+			<!-- IJ-OpenCV repo -->
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
+ 
+
+ 
+ 
+    <dependencies>
+		<dependency>
+		    <!-- ImageJ dependencies -->
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<!-- IJ-OpenCV dependencies -->
+            <groupId>io.github.joheras</groupId>
+            <artifactId>IJ-OpenCV</artifactId>
+            <version>1.2.1-SNAPSHOT</version>
+        </dependency>
+
+		
+    </dependencies>
+</project>
